@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Playpen_Sans as Inter } from "next/font/google";
+import { Poppins as Inter } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/headers";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
