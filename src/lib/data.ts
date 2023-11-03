@@ -103,3 +103,39 @@ export const webServices = [
     name: "Backend & Frontend development",
   },
 ];
+
+export const subscriptionTiers = [
+  {
+    id: 1,
+    name: "Basic Plan",
+    subtitle:
+      "Submit a single request. Modify or end your subscription anytime.",
+    price: 4.999,
+    priceTitle: "Modify or terminate whenever you want",
+    benefits: [
+      "Submit one request at any time",
+      "Typically 48-hour completion",
+      "Access to countless brands",
+      "No user limits",
+      "Comprehensive stock photo library via PictureStock",
+      "Hassle-free card transactions",
+      "Freedom to modify or end anytime",
+    ],
+  },
+  {
+    id: 2,
+    name: "Advanced Plan",
+    subtitle: "Handle multiple tasks. Modify or end your subscription anytime.",
+    price: 7.999,
+    priceTitle: "Modify or terminate whenever you want",
+    benefits: [
+      "Handle two tasks simultaneously",
+      "Typically 48-hour completion",
+      "Access to countless brands",
+      "No user limits",
+      "Comprehensive stock photo library via PictureStock",
+      "Hassle-free card transactions",
+      "Freedom to modify or end anytime",
+    ],
+  },
+];
