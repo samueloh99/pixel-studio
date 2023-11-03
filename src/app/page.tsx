@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Intro } from "@/components/intro";
+import { Services } from "@/components/services";
 import { Works } from "@/components/works";
 import { Benefits } from "@/components/benefits";
 import { SecondSection } from "@/components/secondSection";
@@ -25,6 +26,8 @@ export default function Home() {
       <FirstSection />
       <SecondSection />
       <Benefits />
+      <Works />
+      <Services />
       <Works />
     </main>
   );
