@@ -51,6 +51,8 @@ module.exports = {
         },
         cor1: "#FFF2D8",
         cor2: "#113946",
+        subcor1: "#EAD7BB",
+        subcor2: "#BCA37F",
       },
       borderRadius: {
         lg: "var(--radius)",

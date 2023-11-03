@@ -1,7 +1,8 @@
-import { FirstSection } from "@/components/firstSection";
-import { Intro } from "@/components/intro";
-import { Navigation } from "@/components/navigation";
 import { Button } from "@/components/ui/button";
+import { Intro } from "@/components/intro";
+import { SecondSection } from "@/components/secondSection";
+import { FirstSection } from "@/components/firstSection";
+import { Navigation } from "@/components/navigation";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       </div>
       <Intro />
       <FirstSection />
+      <SecondSection />
     </main>
   );
 }
