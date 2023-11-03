@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Intro } from "@/components/intro";
+import { Benefits } from "@/components/benefits";
 import { SecondSection } from "@/components/secondSection";
 import { FirstSection } from "@/components/firstSection";
 import { Navigation } from "@/components/navigation";
@@ -22,6 +23,7 @@ export default function Home() {
       <Intro />
       <FirstSection />
       <SecondSection />
+      <Benefits />
     </main>
   );
 }
