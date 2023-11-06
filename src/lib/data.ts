@@ -139,3 +139,45 @@ export const subscriptionTiers = [
     ],
   },
 ];
+
+export const faqs = [
+  {
+    question: "There's a limit to request a design ?",
+    answer:
+      "Once you're subscribed you can request many design as you want. But depending on which plans you subscribed we can deliver one or two at time. Checkout the plans available for you.",
+  },
+  {
+    question: "How long it takes to receive my desings ?",
+    answer:
+      "On average, most requests are completed in just two days or less. However more complex requests can take longer.",
+  },
+  {            
+    question: "Which program do you use to create the designs ?",
+    answer: "We are currently using Figma.",
+  },
+  {
+    question: "What if I don't like the desings ?",
+    answer:
+      "Don't worry! We'll continue to revise the design untill you're 100% satisfied.",
+  },
+  {
+    question: "Are there any refunds if I don't like the service ?",
+    answer:
+      "Due to the high quality nature of the work, there will be no refunds issued.",
+  },
+  {
+    question: "How I can request my designs ?",
+    answer:
+      "We use google sheet to manage all the request from our clients. So you will have a google sheet shared with us so you can request the design.",
+  },
+  {
+    question: "How does the pause feature work ?",
+    answer:
+      "We understand you may not have enough design work to fill up entire month. Perhaps you only have one or two design requests at the moment. That's where pausing your subscription comes in handy.<br/>Billing cycles are based on 31 day period. Let's say you sign up and use the service for 21 days, and then decide to pause your subscription. This means that the billing cycle will be paused and you'll have 10 days of service remaining to be used anytime in the future.",
+  },
+  {
+    question: "How long it takes to finish the web development service?",
+    answer:
+      "It depends on the complexity of the project, book a call with us to know more about it.",
+  },
+];

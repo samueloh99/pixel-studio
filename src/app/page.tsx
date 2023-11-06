@@ -6,13 +6,14 @@ import { Benefits } from "@/components/benefits";
 import { SecondSection } from "@/components/secondSection";
 import { FirstSection } from "@/components/firstSection";
 import { Plans } from "@/components/plans";
+import { FAQS } from "@/components/faqs";
 import { Navigation } from "@/components/navigation";
 
 export default function Home() {
   return (
-    <main className="flex relative flex-col border border-black justify-center max-w-[1280px] w-full m-auto">
+    <main className="flex relative flex-col justify-center max-w-[1280px] w-full m-auto">
       <Navigation />
-      <div className="flex flex-col border border-black w-full items-center justify-center gap-10 h-screen">
+      <div className="flex flex-col w-full items-center justify-center gap-10 h-screen">
         <div className="flex flex-col justify-center items-center gap-5">
           <h1 className="font-bold text-4xl text-cor2">
             Design UX/UI & Web Development Agency
@@ -30,6 +31,7 @@ export default function Home() {
       <Works />
       <Services />
       <Plans />
+      <FAQS />
     </main>
   );
 }
