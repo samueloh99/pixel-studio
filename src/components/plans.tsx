@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export function Plans() {
   return (
-    <div className="flex flex-col justify-center items-center h-full py-[200px] gap-20">
+    <div className="container flex flex-col justify-center items-center h-full py-[200px] gap-20">
       <div className="flex flex-col items-center justify-center text-center w-full md:w-2/5 gap-5">
         <h1 className="font-bold text-2xl">Subscription Tiers</h1>
 

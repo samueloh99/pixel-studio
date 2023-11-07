@@ -1,8 +1,42 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+import { motion, useAnimation, useScroll, useTransform } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 import { Mail, Repeat2, Zap } from "lucide-react";
 
 export function Intro() {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.1, // 10% of the element is visible
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
+
+  const variants = {
+    visible: {
+      opacity: 1,
+      translateY: 0,
+      transition: { duration: 0.8, delay: 0.3 },
+    },
+    hidden: { opacity: 0, translateY: 50 }, // adjust the translateY value as needed
+  };
+
   return (
-    <div className="flex flex-col justify-center items-center h-full py-[200px] gap-10">
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={variants}
+      className="container flex flex-col justify-center items-center h-full py-[100px] gap-10"
+    >
       <div className="flex flex-col items-center justify-center text-center w-full md:w-2/5 gap-5">
         <h1 className="font-bold text-2xl">
           Elevating User Experience Through Innovative Design & Development
@@ -32,6 +66,6 @@ export function Intro() {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

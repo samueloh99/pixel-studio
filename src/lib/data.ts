@@ -151,7 +151,7 @@ export const faqs = [
     answer:
       "On average, most requests are completed in just two days or less. However more complex requests can take longer.",
   },
-  {            
+  {
     question: "Which program do you use to create the designs ?",
     answer: "We are currently using Figma.",
   },
@@ -179,5 +179,16 @@ export const faqs = [
     question: "How long it takes to finish the web development service?",
     answer:
       "It depends on the complexity of the project, book a call with us to know more about it.",
+  },
+];
+
+export const footerLinks = [
+  {
+    name: "Login",
+    link: "/login",
+  },
+  {
+    name: "Get started",
+    link: "/",
   },
 ];
