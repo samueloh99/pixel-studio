@@ -35,7 +35,7 @@ export function Intro() {
       initial="hidden"
       animate={controls}
       variants={variants}
-      className="container flex flex-col justify-center items-center h-full py-[100px] gap-10"
+      className="container flex flex-col justify-center items-center h-full py-[300px] gap-10"
     >
       <div className="flex flex-col items-center justify-center text-center w-full md:w-2/5 gap-5">
         <h1 className="font-bold text-2xl">

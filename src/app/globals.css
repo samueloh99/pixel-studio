@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 
 @layer base {
   :root {
@@ -79,6 +80,18 @@
   h2,
   h3,
   h4 {
-    @apply text-cor2;
+    @apply text-black;
   }
+}
+
+.pill-container {
+  background-color: white; /* or any color you prefer */
+  width: 170px; /* adjust as needed */
+  height: 70px; /* adjust as needed */
+  border-radius: 35px 0 0 35px; /* this creates the semi-circular side */
+  /* Other styles for positioning and appearance */
+  position: absolute;
+  bottom: 40px; /* adjust as per your design */
+  left: 0;
+  overflow: hidden; /* Ensures that anything inside this div does not spill outside the rounded corner */
 }
